@@ -1,0 +1,140 @@
+.galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .fotos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em 0;
+        img{
+            margin: 1rem 0;
+            width: 300px;
+        }
+    }
+    .boton{
+        button{
+            background: black;
+            width: 150px;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 30px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .boton :hover{
+        width: 175px;
+        font-size: 20px;
+        background: rgb(255, 255, 255);
+        color: black;
+    }
+}
+
+@media screen and(min-width: 768px){
+    .degradado2{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.863);
+        background-size: cover;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .imagenDegradado{
+            box-shadow: 10px 10px 15px black;
+        }
+        .salida{
+            margin-top: 3rem;
+            button{
+                font-size: 25px;
+                background: black;
+                color: white;
+                border-radius: 100px;
+                width: 125px;
+                height: 40px;
+                &:hover{
+                    width: 150px;
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    .galeria{
+        display: flex;
+        .fotos{
+            display: flex;
+            flex-direction: row;
+            img{
+            box-shadow: 3px 3px 10px black;
+                margin: 0 1rem;
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 1440px){
+    .galeria{
+        display: flex;
+        .fotos{
+            display: flex;
+            flex-direction: row;
+            img{
+            box-shadow: 3px 3px 10px black;
+                margin: 0 3rem;
+                width: 300px;
+            }
+        }
+        .boton{
+            button{
+                border-radius: 100px;
+                width: 275px;
+                height: 75px;
+                font-size: 30px;
+                margin: 2rem;
+            }
+        }
+        .boton :hover{
+            width: 300px;
+            font-size: 35px;
+            background: rgb(255, 255, 255);
+            color: black;
+        }
+    }
+}
+
+@media screen and(min-width: 1920px){
+    .galeria{
+        display: flex;
+        .fotos{
+            display: flex;
+            flex-direction: row;
+            img{
+            box-shadow: 3px 3px 10px black;
+                margin: 0 3rem;
+                width: 400px;
+            }
+        }
+        .boton{
+            button{
+                border-radius: 100px;
+                width: 275px;
+                height: 75px;
+                font-size: 30px;
+                margin: 2rem;
+            }
+        }
+        .boton :hover{
+            width: 275px;
+            font-size: 35px;
+            background: rgb(255, 255, 255);
+            color: black;
+        }
+    }
+}
