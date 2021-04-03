@@ -379,6 +379,10 @@ header .Movil .hormigas .lineaNegra h1 {
   }
 }
 
+.degradado2 {
+  display: none;
+}
+
 .galeria {
   display: -webkit-box;
   display: -ms-flexbox;
